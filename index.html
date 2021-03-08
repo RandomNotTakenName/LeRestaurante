@@ -4,39 +4,155 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LeRestaurante</title>
+    <meta alergens="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Le Restaurante</title>
 </head>
 
 <body>
     <header>
-        <!-- тут z-index на минус 1 походу надо или плюс XDDD-->
         <img src="logo.png" alt="logo">
         <nav>
-            <!-- эту ъуйню разместить ровно между лого и правым краем -->
-            <span class="nav">price list</span>
-            <span class="nav">opening hours</span>
-            <span class="nav">about us</span>
-            <span class="nav">contacts</span>
+            <span class="nav text target">price list</span>
+            <span class="nav text target">opening hours</span>
+            <span class="nav text target">about us</span>
+            <span class="nav text target">contacts</span>
         </nav>
     </header>
-    <section>
-        <div class="meat"></div>
-        <div class="vege"></div>
-        <div class="wtf"></div>
+    <section class="top">
+        <div class="img-container meat">
+            <img class="img meatImg" src="img\meat.png" alt="">
+            <div class="banner">
+                <span class="description text">for meat lovers</span>
+                <div>
+                    <span class="button text target">full menu</span>
+                </div>
+            </div>
+        </div>
+        <div class="img-container vege">
+            <img class="img vegeImg" src="img\vege.jpg" alt="">
+            <div class="banner">
+                <span class="description text">vegeterian & vegan</span>
+                <div>
+                    <span class="button text target">full menu</span>
+                </div>
+            </div>
+        </div>
+        <div class="img-container secret">
+            <img class="img secretImg" src="img\secrets.jpg" alt="">
+            <div class="banner">
+                <span class="description text">see our secrets</span>
+                <div>
+                    <span class="button text target">take me there</span>
+                </div>
+            </div>
+        </div>
     </section>
-    <section class="dialy-menu">
-        <h2></h2>
-        <!-- radio -->
-        <span></span>
-        <div class="grid menu"></div>
-        <div class="online-menu"></div>
+    <section class="dialyMenu">
+        <h2 class="text">daily menu</h2>
+        <span class="text"><input type="checkbox"> show vegan menu only</span>
+        <div class="gridMenu">
+            <div class="flex-row-menu">
+                <img src="png/meat.png" alt="Image">
+                <div class="items">
+                    <div class="flex-row-item">
+                        <span class="text">raw meat with bbq</span>
+                        <span class="dash"></span>
+                        <span class="text right price">10$</span>
+                    </div>
+                    <div class="flex-row-item alergens">
+                        <span class="text">alergens</span>
+                        <span class="dash alergens"></span>
+                        <span class="text right">4, 8, 12</span>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-row-menu">
+                <img src="png/trout.png" alt="Image">
+                <div class="items">
+                    <div class="flex-row-item">
+                        <span class="text">fresh trout</span>
+                        <span class="dash"></span>
+                        <span class="text right price">13$</span>
+                    </div>
+                    <div class="flex-row-item alergens">
+                        <span class="text">alergens</span>
+                        <span class="dash alergens"></span>
+                        <span class="text right">4, 9</span>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-row-menu">
+                <img src="png/soup.png" alt="Image">
+                <div class="items">
+                    <div class="flex-row-item">
+                        <span class="text">mushroom soup</span>
+                        <span class="dash"></span>
+                        <span class="text right price">9$</span>
+                    </div>
+                    <div class="flex-row-item alergens">
+                        <span class="text">alergens</span>
+                        <span class="dash alergens"></span>
+                        <span class="text right">1, 3, 11</span>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-row-menu">
+                <img src="png/chicken.png" alt="Image">
+                <div class="items">
+                    <div class="flex-row-item">
+                        <span class="text">chicken with potatoes</span>
+                        <span class="dash"></span>
+                        <span class="text right price">18$</span>
+                    </div>
+                    <div class="flex-row-item alergens">
+                        <span class="text">alergens</span>
+                        <span class="dash alergens"></span>
+                        <span class="text right">4, 8, 17</span>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-row-menu">
+                <img src="png/pasta.png" alt="Image">
+                <div class="items">
+                    <div class="flex-row-item">
+                        <span class="text">pasta with tomato puree</span>
+                        <span class="dash"></span>
+                        <span class="text right price">12$</span>
+                    </div>
+                    <div class="flex-row-item alergens">
+                        <span class="text">alergens</span>
+                        <span class="dash alergens"></span>
+                        <span class="text right">2, 6</span>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-row-menu">
+                <img src="png/salad.png" alt="Image">
+                <div class="items">
+                    <div class="flex-row-item">
+                        <span class="text">salad with beetroot</span>
+                        <span class="dash"></span>
+                        <span class="text right price">6$</span>
+                    </div>
+                    <div class="flex-row-item alergens">
+                        <span class="text">alergens</span>
+                        <span class="dash alergens"></span>
+                        <span class="text right">none</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="online-menu">
+
     </section>
     <section class="location">
 
     </section>
     <footer>
-<div class="grid-3-1"></div>   <!-- тут сетка из 4 частей: 3 малых
+        <div class="grid-3-1"></div>
+        <!-- тут сетка из 4 частей: 3 малых
      под текст и 1 на сайн-ап -->
     </footer>
 </body>

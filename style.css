@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.text {
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+.target {
+    cursor: pointer;
+}
+header {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    font-weight: 700;
+}
+nav {
+    margin: 40px 0px 40px 220px;
+}
+nav>span {
+    font-style: italic;
+    margin: 10px;
+}
+nav>span:nth-child(1) {
+    color: orange;
+    text-decoration: solid underline orange 3px;
+    text-underline-position: below;
+}
+.top {
+    height: 600px;
+    width: 100%;
+    background-color: orange;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+.img-container {
+    max-width: 100%;
+    height: 500px;
+    transform-origin: right top;
+    transform: rotate(20deg) ;
+    overflow: hidden;
+    padding: 19%;
+    margin-right: 2.8%;
+}
+.meatImg {
+    transform-origin: right top;
+    transform: rotate(-20deg) translateX(-500px) translateY(-500px) scale(0.7);
+}
+.vegeImg {
+    transform-origin: right top;
+    transform: rotate(-20deg) translateX(-1250px) translateY(-780px) scale(0.6);
+}
+.secretImg {
+    transform-origin: right top;
+    transform: rotate(-20deg) translateX(-480px) translateY(-430px)  scale(0.9);
+}
+.banner {
+    position: absolute;
+    z-index: 1;
+    width: 150px;
+    height: 75px;
+    top: calc(50% - 80px);
+    left: calc(50% - 130px);
+    transform-origin: left top;
+    transform: rotate(-20deg);
+    background: radial-gradient(circle at top left, transparent 20px, white 0) top left,
+    radial-gradient(circle at top right, transparent 20px, white 0) top right,
+    radial-gradient(circle at bottom right, transparent 20px, white 0) bottom right,
+    radial-gradient(circle at bottom left, transparent 20px, white 0) bottom left;
+    background-size: 51% 51%;
+    background-repeat: no-repeat;
+    padding: 20px;
+}
+.banner {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    transition: 1.5s;
+    opacity: 50%;
+}
+.description {
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.button {
+    background-color: orange;
+    border-radius: 5px;
+    font-size: 14px;
+    position: absolute;
+    width: 120px;
+    text-align: center;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto;
+
+}
+.banner:hover {
+    transition: 1.5s;
+    transform: translateY(-30px) rotate(-20deg);
+    opacity: 100%;
+}
+.gridMenu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.flex-row-menu {
+    display: flex;
+    flex-direction: row;
+}
+.flex-row-item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 5px;
+    justify-content: space-between;
+}
+.items {
+    min-width: 25vw;
+    margin: 30px;
+}
+.flex-row-item>span {
+    padding: 5px;
+    white-space: nowrap;
+}
+.flex-row-item>.dash {
+    flex: 1;
+    padding: 0;
+    height: 1em;
+    border-bottom: 2px dotted black;
+}
+.flex-row-menu>img {
+    object-fit: contain;
+}
+.dialyMenu {
+    padding: 0 15vw;
+}
+.dialyMenu>h2 {
+    text-align: center;
+    color: orange;
+    font-style: italic;
+    margin: 20px;
+}
+.text>input {
+    margin: 10px;
+}
+.items>.alergens>span {
+    color: grey;
+    border-bottom-color: grey;
+    font-style: italic;
+}
+.price {
+    width: 30px;
+    margin-left: 10px;
+    text-align: center;
+    background: radial-gradient(circle at top left, transparent 7px, orange 0) top left,
+    radial-gradient(circle at top right, transparent 7px, orange 0) top right,
+    radial-gradient(circle at bottom right, transparent 7px, orange 0) bottom right,
+    radial-gradient(circle at bottom left, transparent 7px, orange 0) bottom left;
+    background-size: 51% 51%;
+    background-repeat: no-repeat;
+}
+/* .online-menu {
+    background: radial-gradient(circle at top left, white 40px, orange 42px, transparent 0) top left,
+    radial-gradient(circle at top right, white 40px, orange 42px, transparent 0) top right,
+    radial-gradient(circle at bottom right, white 40px, orange 42px, transparent 0) bottom right,
+    radial-gradient(circle at bottom left, white 40px, orange 42px, transparent 0) bottom left;
+    background-size: 51% 51%;
+    background-repeat: no-repeat;
+    width: 500px;
+    height: 200px;
+} */
