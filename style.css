@@ -168,13 +168,11 @@ nav>span:nth-child(1) {
     background-size: 51% 51%;
     background-repeat: no-repeat;
 }
-/* .online-menu {
-    background: radial-gradient(circle at top left, white 40px, orange 42px, transparent 0) top left,
-    radial-gradient(circle at top right, white 40px, orange 42px, transparent 0) top right,
-    radial-gradient(circle at bottom right, white 40px, orange 42px, transparent 0) bottom right,
-    radial-gradient(circle at bottom left, white 40px, orange 42px, transparent 0) bottom left;
-    background-size: 51% 51%;
-    background-repeat: no-repeat;
-    width: 500px;
-    height: 200px;
-} */
+.online-menu {
+    display: flex;
+    flex-direction: row;
+    padding: 0 7vw 0 15vw;
+}
+.next {
+    width: 7%;
+}
