@@ -143,7 +143,7 @@ nav>span:nth-child(1) {
 .dialyMenu {
     padding: 0 15vw;
 }
-.dialyMenu>h2 {
+.orange {
     text-align: center;
     color: orange;
     font-style: italic;
@@ -152,7 +152,7 @@ nav>span:nth-child(1) {
 .text>input {
     margin: 10px;
 }
-.items>.alergens>span {
+.items>.alergens>span, .online-info>p {
     color: grey;
     border-bottom-color: grey;
     font-style: italic;
@@ -175,4 +175,73 @@ nav>span:nth-child(1) {
 }
 .next {
     width: 7%;
+}
+.online-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+    align-items: flex-start;
+}
+.online-button {
+    display: inline;
+    padding: 10px;
+    background-color: orange;
+}
+.next {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 30px;
+    align-self: center;
+    align-items: center;
+}
+.location {
+    height: 50vh;
+    background-image: url("4031.jpg");
+    justify-content: center;
+    align-content: center;
+    height: 400px;
+}
+.inner {
+    display: flex;
+    flex-direction: column;
+    background: radial-gradient(circle at top left, transparent 20px, white 0) top left,
+    radial-gradient(circle at top right, transparent 20px, white 0) top right,
+    radial-gradient(circle at bottom right, transparent 20px, white 0) bottom right,
+    radial-gradient(circle at bottom left, transparent 20px, white 0) bottom left;
+    background-size: 51% 51%;
+    background-repeat: no-repeat;
+    text-align: center;
+    justify-content: space-evenly;
+    height: 200px;
+    width: 400px;
+    position: relative;
+    top: calc(50% - 100px);
+    left: calc(50% - 200px);
+}
+.flex {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-evenly;
+}
+footer {
+    height: 100px;
+    background-image: url("footer.jpg");
+    background-repeat: no-repeat;
+    padding: 50px 100px;
+}
+.footflex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+}
+.footflex>div>h3 {
+    padding: 10px 0;
+}
+.footflex>div {
+    color: white;
+    font-weight: 100;
 }
