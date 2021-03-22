@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta alergens="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <title>Le Restaurante</title>
 </head>
 
@@ -20,7 +21,7 @@
         </nav>
     </header>
     <section class="top">
-        <div class="img-container meat">
+        <div class="img-container">
             <img class="img meatImg" src="img\meat.png" alt="">
             <div class="banner">
                 <span class="description text">for meat lovers</span>
@@ -29,7 +30,7 @@
                 </div>
             </div>
         </div>
-        <div class="img-container vege">
+        <div class="img-container">
             <img class="img vegeImg" src="img\vege.jpg" alt="">
             <div class="banner">
                 <span class="description text">vegeterian & vegan</span>
@@ -38,7 +39,7 @@
                 </div>
             </div>
         </div>
-        <div class="img-container secret">
+        <div class="img-container">
             <img class="img secretImg" src="img\secrets.jpg" alt="">
             <div class="banner">
                 <span class="description text">see our secrets</span>
@@ -50,7 +51,7 @@
     </section>
     <section class="dialyMenu">
         <h2 class="text orange">daily menu</h2>
-        <span class="text"><input type="checkbox"> show vegan menu only</span>
+        <span class="text"><input type="checkbox" id="checkbox" onchange="vegan()"> show vegan menu only</span>
         <div class="gridMenu">
             <div class="flex-row-menu meat">
                 <img src="png/meat.png" alt="Image">

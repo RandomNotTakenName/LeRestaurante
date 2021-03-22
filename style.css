@@ -254,3 +254,6 @@ footer {
 .footflex>div>span { 
     font-weight: 100;
 }
+.invisible {
+    display: none;
+}
